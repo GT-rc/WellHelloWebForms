@@ -14,6 +14,11 @@ public partial class index : System.Web.UI.Page
 
     protected void showButton_Click(object sender, EventArgs e)
     {
-        Response.Write("Hello World!");
+        Response.Write("Hello " + needInput.Text + "!");
+    }
+
+    protected void needInput_TextChanged(object sender, EventArgs e)
+    {
+
     }
 }

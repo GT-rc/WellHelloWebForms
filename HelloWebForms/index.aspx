@@ -12,8 +12,11 @@
 
         </div>
         <p>
+            <asp:TextBox ID="needInput" runat="server" OnTextChanged="needInput_TextChanged"></asp:TextBox>
             <asp:Button ID="showButton" runat="server" OnClick="showButton_Click" Text="Show" />
         </p>
+        <p>
+            &nbsp;</p>
     </form>
 </body>
 </html>
