@@ -9,13 +9,23 @@ public partial class Default2 : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-        TextBox1.Text = "Loading";
+        //txtName.Text = "Loading";
     }
 
-    protected void Button1_Click(object sender, EventArgs e)
+    //protected void Button1_Click(object sender, EventArgs e)
+    //{
+    //    txtName.Text = "You clicked it!";
+    //    Response.Write("Great job!");
+    //}
+
+    protected void txtName_TextChanged(object sender, EventArgs e)
     {
-        TextBox1.Text = "You clicked it!";
-        Response.Write("Great job!");
+
+    }
+
+    protected void btnSayHello_Click(object sender, EventArgs e)
+    {
+        ltrMessage.Text = "Hello " + txtName.Text;
     }
 
     protected void TextBox1_TextChanged(object sender, EventArgs e)

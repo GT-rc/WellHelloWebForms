@@ -9,8 +9,11 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <asp:TextBox ID="TextBox1" runat="server" OnTextChanged="TextBox1_TextChanged"></asp:TextBox><asp:Button ID="Button1" runat="server" Text="It's a Button" OnClick="Button1_Click" />
+            <asp:Literal ID="ltrMessage" runat="server"></asp:Literal>
+            <asp:TextBox ID="txtName" runat="server" OnTextChanged="TextBox1_TextChanged"></asp:TextBox><asp:Button ID="btnSayHello" runat="server" Text="Say Hello" OnClick="btnSayHello_Click" />
         </div>
+        <p>
+            &nbsp;</p>
     </form>
 </body>
 </html>
